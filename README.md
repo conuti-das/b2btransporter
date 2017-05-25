@@ -21,6 +21,8 @@ Die aktuellen Entwicklungen sind hier zu finden : (https://huboard.com/conuti-da
 
 [![Stories in Ready](https://badge.waffle.io/conuti-das/b2btransporter.svg?label=bug&title=bug)](https://huboard.com/conuti-das/b2btransporter#/) [![Stories in Ready](https://badge.waffle.io/conuti-das/b2btransporter.svg?label=enhancement&title=Enhancment)](https://huboard.com/conuti-das/b2btransporter#/)
 
+Versionsinformationen (https://github.com/conuti-das/b2btransporter/blob/master/VERSION.md)
+
 ## Update auf Version 1.40 von Version 1.3x 
 
 Vor dem Update sollten alle Tabellen gelöscht werden und der Installer erneut ausgeführt werden (siehe Installation)
@@ -68,17 +70,4 @@ Im letzten Schritt werden Tabellen angelegt und mit Default Daten gefüllt. Dazu
 
 Sollte die Anwendung nicht starten, findet sich im b2b-transporter.log File ein Hinweis auf das Problem. 
 
-## Versionen
 
-# 1.40 (24.05.2017)
-
-*  
-
-
-# 1.39 (19.05.2017)
-
-* Applikation Error beim Löschen von Transportaufträgen behoben **BUG** [#3](/conuti-das/b2btransporter/issues/3)
-
-* Transportitem Editor eingeführt **ENHANCEMENT** [#2](/conuti-das/b2btransporter/issues/2)
-
-* Detail Ansicht verschlankt **ENHANCEMENT**  [#1](/conuti-das/b2btransporter/issues/1)
