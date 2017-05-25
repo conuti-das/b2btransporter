@@ -1,18 +1,14 @@
-# b2btransporter
-B2B Transporter Informationen
+# B2B Transporter Informationen
 
-[![Stories in Ready](https://badge.waffle.io/conuti-das/b2btransporter.svg?label=backlog&title=Backlog)](http://waffle.io/conuti-das/b2btransporter)
+## Übersicht Entwicklungsstand
 
-[![Stories in Ready](https://badge.waffle.io/conuti-das/b2btransporter.svg?label=geplant&title=Geplant)](http://waffle.io/conuti-das/b2btransporter)
+https://huboard.com/conuti-das/b2btransporter#/
 
-[![Stories in Ready](https://badge.waffle.io/conuti-das/b2btransporter.svg?label=bug&title=bug)](http://waffle.io/conuti-das/b2btransporter)
+[![Stories in Ready](https://badge.waffle.io/conuti-das/b2btransporter.svg?label=bug&title=bug)]()
 
 
-[![Stories in Ready](https://badge.waffle.io/conuti-das/b2btransporter.svg?label=enhancement&title=Enhancment)](http://waffle.io/conuti-das/b2btransporter)
+[![Stories in Ready](https://badge.waffle.io/conuti-das/b2btransporter.svg?label=enhancement&title=Enhancment)]()
 
-[![Stories in Ready](https://badge.waffle.io/conuti-das/b2btransporter.svg?label=in%20arbeit&title=In%20Arbeit)](http://waffle.io/conuti-das/b2btransporter)
+[![Stories in Ready](https://badge.waffle.io/conuti-das/b2btransporter.svg?label=in%20arbeit&title=In%20Arbeit)](h)
 
 [![Stories in Ready](https://badge.waffle.io/conuti-das/b2btransporter.svg?label=abgeschlossen&title=Abgeschlossen)](http://waffle.io/conuti-das/b2btransporter)
-
-Übersicht:
-https://waffle.io/conuti-das/b2btransporter
