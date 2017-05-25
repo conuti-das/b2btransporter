@@ -1,0 +1,14 @@
+## Versionen
+
+# 1.40 (24.05.2017)
+
+*  
+
+
+# 1.39 (19.05.2017)
+
+* Applikation Error beim Löschen von Transportaufträgen behoben **BUG** [#3](/conuti-das/b2btransporter/issues/3)
+
+* Transportitem Editor eingeführt **ENHANCEMENT** [#2](/conuti-das/b2btransporter/issues/2)
+
+* Detail Ansicht verschlankt **ENHANCEMENT**  [#1](/conuti-das/b2btransporter/issues/1)
