@@ -66,7 +66,7 @@ Es empfiehlt sich diese Datei unter Tomcat/conf/cbts/ abzulegen, damit diese bei
 
 ### Installation ausführen
 
-Im letzten Schritt werden Tabellen angelegt und mit Default Daten gefüllt. Dazu muss nach dem Starten des Tomcats die Adresse http://<servername>:<port>/ctbs aufgerufen werden. Der Transporter erkennt ob er im Master Modus operiert und wird dann durch die Installation führen.
+Im letzten Schritt werden Tabellen angelegt und mit Default Daten gefüllt. Dazu muss nach dem Starten des Tomcats die Adresse http://servername:port/ctbs aufgerufen werden. Der Transporter erkennt den Master Modus operiert und wird dann durch die Installation führen.
 
 Sollte die Anwendung nicht starten, findet sich im b2b-transporter.log File ein Hinweis auf das Problem. 
 
