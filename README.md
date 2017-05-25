@@ -21,8 +21,8 @@ Hier finden sie Informationen zum Transport System für die B2B by Practice entw
 
 # 1.39 (19.05.2017)
 
-* Fehler beim Löschen von Transportaufträge _bug_ #3
+* #3 Fehler beim Löschen von Transportaufträge _bug_ 
 
-* Transportitem Editor _enhancement_ #2
+* #2 Transportitem Editor _enhancement_ 
 
-* Detail Ansicht verschlanken _enhancement_ #1
+* #1 Detail Ansicht verschlanken _enhancement_ 
