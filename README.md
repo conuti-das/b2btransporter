@@ -1,6 +1,9 @@
-# B2B Transporter
+# B2B Transporter [![GitHub issues](https://img.shields.io/github/release/conuti-das/b2btransporter.svg)](https://github.com/conuti-das/b2btransporter/issues)
 
-Hier finden sie Informationen zum Transport System für die B2B by Practice entwickelt von [ConUti](http://conuti.de) in Zusammenarbeit mit [Next Level Integration](http://www.next-level-integration.com/)
+[![GitHub issues](https://img.shields.io/github/issues/conuti-das/b2btransporter.svg)](https://github.com/conuti-das/b2btransporter/issues)
+
+
+Hier finden sie Informationen zum Transport System für die B2B by Practice entwickelt von [ConUti](http://conuti.de) 
 
 ## Übersicht Entwicklungsstand
 
@@ -9,3 +12,17 @@ Hier finden sie Informationen zum Transport System für die B2B by Practice entw
 (https://huboard.com/conuti-das/b2btransporter#/)
 
 
+## Versionen
+
+# 1.40 (24.05.2017)
+
+*  
+
+
+# 1.39 (19.05.2017)
+
+* Fehler beim Löschen von Transportaufträge _bug_ #3
+
+* Transportitem Editor _enhancement_ #2
+
+* Detail Ansicht verschlanken _enhancement_ #1
