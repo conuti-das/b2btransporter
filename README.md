@@ -1,6 +1,6 @@
 # B2B Transporter [![GitHub issues](https://img.shields.io/github/release/conuti-das/b2btransporter.svg)](https://github.com/conuti-das/b2btransporter/issues)
 
-[![GitHub issues](https://img.shields.io/github/issues/conuti-das/b2btransporter.svg)](https://github.com/conuti-das/b2btransporter/issues)
+[![GitHub issues](https://img.shields.io/github/issues/conuti-das/b2btransporter.svg)](https://github.com/conuti-das/b2btransporter/issues)[![GitHub issues](https://img.shields.io/github/issues-closed/conuti-das/b2btransporter.svg)](https://github.com/conuti-das/b2btransporter/issues)
 
 
 Hier finden sie Informationen zum Transport System für die B2B by Practice entwickelt von [ConUti](http://conuti.de) 
