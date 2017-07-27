@@ -2,6 +2,16 @@
 
 Übersicht der Änderungen der letzten Versionen
 
+# 1.50 (26.05.2017)
+
+* Action Transport funktioniert nicht **BUG**
+
+* Anzeige der konfigurierten Systeme auf Startseite mit Absprung auf den Slave  **ENHANCEMENT**
+
+* Anzeige Versioninformationen für Master und Slave  **ENHANCEMENT**
+
+* Erweiterung Filterfunktion  **ENHANCEMENT**
+
 # 1.40 (24.05.2017)
 
 * Einzeltransport für große Dateien  **ENHANCEMENT** [#26](/conuti-das/b2btransporter/issues/26)
