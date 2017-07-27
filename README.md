@@ -15,17 +15,18 @@ Sowohl Slave, als auch Master sind eine identische eigenständige Webapplikation
 
 ## Übersicht Entwicklungsstand
 
-Die aktuellen Entwicklungen sind hier zu finden : (https://huboard.com/conuti-das/b2btransporter#/)
+Auf der Seite (https://github.com/conuti-das/b2btransporter/issues) werden aktuelle Bugs und Features erfasst. Diese werden bewertet und einem Meilenstein (entspricht neuem Release) zugeordnet. Die aktuelle Meilensteinplanung inklusive Releasedatum findet sich auf dieser Seite (https://github.com/conuti-das/b2btransporter/milestones). 
+Zwischenreleases aufgrund von Bugs oder relevanten Änderungen in der B2B, werden bei Bedarf ergänzt.
+Der Umfang eines Release wächst dabei entsprechend des verfügbaren Rahmens mit der Anzahl der Kunden, die einen Wartungsvertrag abgeschlossen haben.
+
 
 [![GitHub issues](https://img.shields.io/github/issues/conuti-das/b2btransporter.svg)](https://github.com/conuti-das/b2btransporter/issues)[![GitHub issues](https://img.shields.io/github/issues-closed/conuti-das/b2btransporter.svg)](https://github.com/conuti-das/b2btransporter/issues)
 
 [![Stories in Ready](https://badge.waffle.io/conuti-das/b2btransporter.svg?label=bug&title=bug)](https://huboard.com/conuti-das/b2btransporter#/) [![Stories in Ready](https://badge.waffle.io/conuti-das/b2btransporter.svg?label=enhancement&title=Enhancment)](https://huboard.com/conuti-das/b2btransporter#/)
 
-Versionsinformationen (https://github.com/conuti-das/b2btransporter/blob/master/VERSION.md)
+## Aktuelle Version
 
-## Update auf Version 1.40 von Version 1.3x 
-
-Vor dem Update sollten alle Tabellen gelöscht werden und der Installer erneut ausgeführt werden (siehe Installation)
+Informationen zur aktuellen Version finden sich hier : (https://github.com/conuti-das/b2btransporter/blob/master/VERSION.md)
 
 ## Installation
 
@@ -69,5 +70,16 @@ Es empfiehlt sich diese Datei unter Tomcat/conf/cbts/ abzulegen, damit diese bei
 Im letzten Schritt werden Tabellen angelegt und mit Default Daten gefüllt. Dazu muss nach dem Starten des Tomcats die Adresse http://servername:port/cbts aufgerufen werden. Der Transporter erkennt den Master Modus operiert und wird dann durch die Installation führen.
 
 Sollte die Anwendung nicht starten, findet sich im b2b-transporter.log File ein Hinweis auf das Problem. 
+
+## Update
+
+### Webarchiv deployen
+
+Tomcat stoppen. Dateien in Tomcat webapps Verzeichnis kopieren. Die Auslieferung cbts.zip muss direkt ins Tomcat Webapps Verzeichnis kopiert und entpackt werden. Nach dem Starten des Tomcats ist die neue Version verfügbar. Änderungen an der Datenbank werden automatisch ausgeführt.
+
+## Update auf Version 1.40 von Version 1.3x 
+
+Für ein Update von Version 1.3x auf > 1.4. gilt folgendes : Vor dem Update sollten alle Tabellen gelöscht werden und der Installer erneut ausgeführt werden (siehe Installation)
+
 
 
