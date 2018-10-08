@@ -67,11 +67,71 @@ Beispiel cbts.xml :
 
 Dateien in Tomcat webapps Verzeichnis kopieren. Die Auslieferung cbts.zip muss direkt ins Tomcat Webapps Verzeichnis kopiert und entpackt werden.
 
-### Konfigurationsanpassungen
+### Konfigurationsanpassungen in cbts.conf
 
-Unter webapps/cbts/WEB-INF/applcation/conf befinden sich die Konfigurationsdatei cbts.conf. Hier wird der Slave oder Master Modus gesetzt indem der entsprechende Bereich auskommentiert wird. Diese Datei im Tomcat Root/conf/cbts/cbts.conf ablegen (der Speicherort kann in der application.conf angepasst werden). Nach Speicherung der Konfiguration kann der Tomcat gestartet werden. 
+Unter webapps/cbts/WEB-INF/application/conf befinden sich die Konfigurationsdatei cbts.conf. Hier wirde festgelegt ob eine Installation ein Master oder Slave ist. Außerdem muss ein SQL Dialect gepflegt werden, damit die Anwendung automatisch die SQL Skripte passend für die Datenbank erzeugt. Es ist beispielhaft eine Master und Slave Konfiguration mit Postgres DB enthalten. 
+
+#### Die Slave Konfiguration
+```
+#
+# SLAVE CONFIGURATION
+# Datasource name from Tomcat/conf/Catalina/localhost/cbts.xml file 
+db.default=java:/comp/env/jdbc/b2bbp
+# Used SQL dialect
+jpa.default.dialect=org.hibernate.dialect.PostgreSQLDialect
+# Transporter modus master or slave
+cbts.mode=slave
+```
+
+#### Die Master Konfiguration
+```
+# MASTER CONFIGURATION
+# uncomment if this instance is acting as CBTS server (and comment SLAVE CONFIGURATION)
+# Datasource name from Tomcat/conf/Catalina/localhost/cbts.xml file 
+db.default=java:/comp/env/jdbc/b2bbp
+# enable Sql debug information
+jpa.default.debugSQL=true
+# Used SQL dialect
+jpa.default.dialect=org.hibernate.dialect.PostgreSQLDialect
+# SQL UPDATE MODE ( SQL migration script will be executed automatically ) 
+jpa.default.ddl=update
+# Transporter modus master or slave
+cbts.mode=master
+```
+
+#### SQL Dialekt 
+
+In der cbts.conf muss je nach Datenbankversion der Dialect angepasst werden, damit die SQL Skripte automatisch funktionieren.
+
+Für Postgres ist dies beispielsweise:
+jpa.default.dialect=org.hibernate.dialect.PostgreSQLDialect
+
+Andere Datenbanken :
+```
+PostgreSQL			org.hibernate.dialect.PostgreSQLDialect
+MySQL5				org.hibernate.dialect.MySQL5Dialect
+MySQL5 with InnoDB		org.hibernate.dialect.MySQL5InnoDBDialect
+MySQL mit MyISAM		org.hibernate.dialect.MySQLMyISAMDialect
+Oracle (alle Versionen)		org.hibernate.dialect.OracleDialect
+Oracle 9i			org.hibernate.dialect.Oracle9iDialect
+Oracle 10g			org.hibernate.dialect.Oracle10gDialect
+Oracle 11g			org.hibernate.dialect.Oracle10gDialect
+Microsoft SQL Server 2000	org.hibernate.dialect.SQLServerDialect
+Microsoft SQL Server 2005	org.hibernate.dialect.SQLServer2005Dialect
+Microsoft SQL Server 2008	org.hibernate.dialect.SQLServer2008Dialect
+SAP DB				org.hibernate.dialect.SAPDBDialect
+H2 Database			org.hibernate.dialect.H2Dialect
+Progress			org.hibernate.dialect.ProgressDialect
+```
+
+
+Diese Datei im Tomcat Root/conf/cbts/cbts.conf ablegen (der Speicherort kann in der application.conf angepasst werden). Nach Speicherung der Konfiguration kann der Tomcat gestartet werden. 
 
 Es empfiehlt sich diese Datei unter Tomcat/conf/cbts/ abzulegen, damit diese bei zukünftigen Updates nicht wieder angepasst werden muss.
+
+
+
+
 
 ### Installation ausführen
 
