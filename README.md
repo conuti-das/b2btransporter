@@ -25,7 +25,6 @@ Der Umfang eines Release wächst dabei entsprechend des verfügbaren Rahmens mit
 
 [![GitHub issues](https://img.shields.io/github/issues/conuti-das/b2btransporter.svg)](https://github.com/conuti-das/b2btransporter/issues)[![GitHub issues](https://img.shields.io/github/issues-closed/conuti-das/b2btransporter.svg)](https://github.com/conuti-das/b2btransporter/issues)
 
-[![Stories in Ready](https://badge.waffle.io/conuti-das/b2btransporter.svg?label=bug&title=bug)](https://huboard.com/conuti-das/b2btransporter#/) [![Stories in Ready](https://badge.waffle.io/conuti-das/b2btransporter.svg?label=enhancement&title=Enhancment)](https://huboard.com/conuti-das/b2btransporter#/)
 
 ## Aktuelle Version
 
@@ -131,16 +130,14 @@ Diese Datei im Tomcat Root/conf/cbts/cbts.conf ablegen (der Speicherort kann in 
 Es empfiehlt sich diese Datei unter Tomcat/conf/cbts/ abzulegen, damit diese bei zukünftigen Updates nicht wieder angepasst werden muss.
 
 
-
-
-
 ### Installation ausführen
 
 Im letzten Schritt werden Tabellen angelegt und mit Default Daten gefüllt. Dazu muss nach dem Starten des Tomcats die Adresse http://servername:port/cbts aufgerufen werden. Der Transporter erkennt den Master Modus operiert und wird dann durch die Installation führen.
 
 Sollte die Anwendung nicht starten, findet sich im b2b-transporter.log File ein Hinweis auf das Problem. 
 
-## Update
+
+## Update Hinweise
 
 ### Webarchiv deployen
 
@@ -151,4 +148,33 @@ Tomcat stoppen. Dateien in Tomcat webapps Verzeichnis kopieren. Die Auslieferung
 Für ein Update von Version 1.3x auf > 1.4. gilt folgendes : Vor dem Update sollten alle Tabellen gelöscht werden und der Installer erneut ausgeführt werden (siehe Installation)
 
 
+## Anpassungen
 
+### Farben und Design
+
+Anpassungen von Farben und anderen Designelementen sind per CSS in der Datei cbts/public/stylesheets/main.css möglich, wie beispielsweise die grüne Basisfarbe (Hex Code 8bc34a).
+
+
+### Texte und Links/Icons
+
+Alle Texte sind in der Datei cbts/conf/messages anpassbar. Dort sind auch Links und Icons hinterlegt. 
+Der Transporter kann mehrsprachig gestaltet werden, indem die eine Messages Datei für die Sprache im Ordner angelegt wird, z.B. für Englisch : cbts/conf/messages.en
+
+In der Applikation conf können die entsprechenden Sprachen freigeschaltet werden indem die Zeile appilcation.conf aktiviert wird:
+```
+# i18n
+# ~~~~~
+# Define locales used by your application.
+# You can then place localized messages in conf/messages.{locale} files
+# application.langs=fr,en,ja
+```
+
+### Log Einstellungen
+
+In der Datei cbts/conf/log4j.properties können Log Verzeichnis und Log Level angepasst werden. Für detaillierte Fehlerinformationen sollte der Log Level auf DEBUG gesetzt werden. 
+In der Datei webapps/cbts/WEB-INF/application/conf/cbts.conf kann zusätzlich das Logging der SQL Statements aktiviert werden indem der Eintrag jpa.default.debugSQL=true hinzugefügt wird. 
+
+### Weiterführende Dokumentation
+
+Mehr Informationen zu den Einstellungsmöglichkeiten in der application.conf und Log Konfiguration gibt es hier :
+https://www.playframework.com/documentation/1.5.x/production
