@@ -122,6 +122,7 @@ Microsoft SQL Server 2008	org.hibernate.dialect.SQLServer2008Dialect
 SAP DB				org.hibernate.dialect.SAPDBDialect
 H2 Database			org.hibernate.dialect.H2Dialect
 Progress			org.hibernate.dialect.ProgressDialect
+Derby				org.hibernate.dialect.DerbyDialect
 ```
 
 
